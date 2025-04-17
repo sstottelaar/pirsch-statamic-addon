@@ -13,4 +13,6 @@ return [
     |
     */
     'exclude_development' => env('PIRSCH_EXCLUDE_DEVELOPMENT', true),
+
+    'pirsch_link' => env('PIRSCH_DASHBOARD_URL'),
 ];

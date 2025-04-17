@@ -4,9 +4,10 @@
 
 ## Features
 
-- **Server-Side Tracking:** integrates Pirsch easily without client-side Javascript for basic pageview tracking. This enhances user privacy and prevents adblockers from interfering.
+- **Server-Side Tracking:** integrates Pirsch easily without client-side Javascript for basic pageview tracking. This enhances user privacy and prevents adblockers from interfering
 - **Automatic Filtering:** automatically excludes visits from your local development environment (configurable)
-- **Antlers Tags:** provides simple Antlers tags for easy custom event tracking directly from your templates.
+- **Antlers Tags:** provides simple Antlers tags for easy custom event tracking directly from your templates
+- **Dashboard Link**: easy access to the Pirsch dashboard directly from the CP
 
 ## Requirements
 
@@ -76,10 +77,23 @@ Example with meta data:
 
 > Never send Personally Identifiable Information (PII) or any sensitive user-specific data in the event metadata. You are responsible for ensuring compliance with privacy regulations (like GDPR). Use the metadata feature cautiously and at your own risk. For best practices, consult the [Pirsch Event Documentation](https://docs.pirsch.io/advanced/events).
 
+### Dashboard link
+
+Pirsch has the ability to create access links. To create an access link:
+
+1. Log in to your Pirsch dashboard.
+2. Go to **Settings** -> **Access**.
+3. Scroll down to the **Access Links** section
+4. Add a new access link and copy the link
+5. Open your `.env` file and the follow:
+   ```env
+   PIRSCH_DASHBOARD_URL="https://xxxxx.pirsch.io/?access=xxxxxxxxxxxxxxxxxxxx"
+   ```
+
 ## Roadmap
 
 - [x] Enhance event tracking capabilities (e.g., duration)
-- [ ] Add a convenient link in the CP to navigate to your Pirsch Dashboard
+- [x] Add a convenient link in the CP to navigate to your Pirsch Dashboard
 - [ ] Display Pirsch statistics directly in the Statamic Control Panel
 
 ## Issues
