@@ -4,15 +4,15 @@
 
 ## Features
 
-- **Server-Side Tracking:** Integrates Pirsch easily without client-side Javascript for basic pageview tracking. This enhances user privacy and prevents adblockers from interfering.
-- **Automatic Filtering:** Automatically excludes visits from your local development environment (`localhost`, `127.0.0.1`) from being tracked. (Configurable)
-- **Antlers Tags:** Provides simple Antlers tags for easy custom event tracking directly from your templates.
+- **Server-Side Tracking:** integrates Pirsch easily without client-side Javascript for basic pageview tracking. This enhances user privacy and prevents adblockers from interfering.
+- **Automatic Filtering:** automatically excludes visits from your local development environment (configurable)
+- **Antlers Tags:** provides simple Antlers tags for easy custom event tracking directly from your templates.
 
 ## Requirements
 
 - Statamic v5
 - PHP 8.1+
-- A [Pirsch Analytics](https://pirsch.io) account
+- A Pirsch account
 
 ## Installation
 
@@ -73,9 +73,9 @@ _(Detailed documentation for Antlers tags and potential PHP usage to be added)_ 
 
 ## Roadmap
 
-- [ ] Display Pirsch statistics directly in the Statamic Control Panel
-- [ ] Add a convenient link in the CP to navigate to your Pirsch Dashboard
-- [ ] Enhance event tracking capabilities (e.g., duration)
+[ ] Display Pirsch statistics directly in the Statamic Control Panel
+[ ] Add a convenient link in the CP to navigate to your Pirsch Dashboard
+[ ] Enhance event tracking capabilities (e.g., duration)
 
 ## Issues
 
