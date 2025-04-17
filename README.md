@@ -10,9 +10,9 @@
 
 ## Requirements
 
-- Statamic v4
+- Statamic v5
 - PHP 8.1+
-- A Pirsch Analytics account
+- A [Pirsch Analytics](https://pirsch.io) account
 
 ## Installation
 
