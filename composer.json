@@ -1,0 +1,38 @@
+{
+  "name": "sstottelaar/pirsch-statamic-addon",
+  "autoload": {
+    "psr-4": {
+      "Sstottelaar\\Pirsch\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sstottelaar\\Pirsch\\Tests\\": "tests"
+    }
+  },
+  "require": {
+    "statamic/cms": "^5.0",
+    "pirsch-analytics/laravel-pirsch": "^1.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^9.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "pixelfear/composer-dist-plugin": true
+    }
+  },
+  "extra": {
+    "statamic": {
+      "name": "Pirsch Statamic Addon",
+      "description": "Pirsch addon for Statamic"
+    },
+    "laravel": {
+      "providers": [
+        "Sstottelaar\\Pirsch\\ServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
