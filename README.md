@@ -52,7 +52,7 @@
 
 Once installed and configured with a valid `PIRSCH_TOKEN`, the addon automatically starts tracking pageviews on every request using Pirsch's server-side tracking capabilities. No further setup is needed for basic tracking.
 
-This addon doesn't rely on the Javascript snippet to track pageviews, so don't add this. The
+This addon handles pageviews server-side, eliminating the need for the Pirsch JavaScript snippet for core tracking. Manually add the snippet only if you specifically require client-side event tracking via JavaScript.
 
 ## Usage
 
@@ -66,8 +66,11 @@ Use the provided Antlers tag in your templates to track custom events:
 
 ```antlers
 {{ pirsch:event name="Contact form submitted" }}
+```
 
-{{# Example with metadata #}}
+Example with meta data:
+
+```antlers
 {{ pirsch:event name="Contact form submitted" \metadata='{"form": "contact"}' }}
 ```
 
