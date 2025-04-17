@@ -8,19 +8,19 @@ use Sstottelaar\Pirsch\Http\Middleware\PirschMiddleware;
 
 class ServiceProvider extends AddonServiceProvider
 {
-    protected $vite = [
-        'input' => [
-            'resources/js/cp.js',
-            'resources/css/cp.css',
-        ],
-        'publicDirectory' => 'resources/dist',
-    ];
+    // protected $vite = [
+    //     'input' => [
+    //         'resources/js/cp.js',
+    //         'resources/css/cp.css',
+    //     ],
+    //     'publicDirectory' => 'resources/dist',
+    // ];
 
-    protected $middlewareGroups = [
+    // protected $middlewareGroups = [
         // 'web' => [
         //     PirschMiddleware::class,
         // ],
-    ];
+    // ];
 
     // protected $routes = [
     //     'cp' => __DIR__.'/../routes/cp.php',
