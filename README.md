@@ -19,7 +19,7 @@
 1.  Install the addon using Composer:
 
     ```bash
-    composer require sstottelaar/pirsch
+    composer require sstottelaar/pirsch-statamic-addon
     ```
 
 2.  **(Optional)** Publish the configuration file if you need to customize default settings (like excluded domains):
