@@ -52,30 +52,32 @@
 
 Once installed and configured with a valid `PIRSCH_TOKEN`, the addon automatically starts tracking pageviews on every request using Pirsch's server-side tracking capabilities. No further setup is needed for basic tracking.
 
+This addon doesn't rely on the Javascript snippet to track pageviews, so don't add this. The
+
 ## Usage
 
 ### Basic Pageview Tracking
 
 Automatic, no action required after configuration.
 
-<!-- ### Event Tracking (Antlers)
+### Event Tracking (Antlers)
 
 Use the provided Antlers tag in your templates to track custom events:
 
 ```antlers
-{{ pirsch:event name="Button Clicked" }}
+{{ pirsch:event name="Contact form submitted" }}
 
 {{# Example with metadata #}}
-{{ pirsch:event name="Form Submitted" meta='{"form_id": "contact", "source": "footer"}' }}
+{{ pirsch:event name="Contact form submitted" \metadata='{"form": "contact"}' }}
 ```
 
-_(Detailed documentation for Antlers tags and potential PHP usage to be added)_ -->
+> Never send Personally Identifiable Information (PII) or any sensitive user-specific data in the event metadata. You are responsible for ensuring compliance with privacy regulations (like GDPR). Use the metadata feature cautiously and at your own risk. For best practices, consult the [Pirsch Event Documentation](https://docs.pirsch.io/advanced/events).
 
 ## Roadmap
 
-[ ] Display Pirsch statistics directly in the Statamic Control Panel
-[ ] Add a convenient link in the CP to navigate to your Pirsch Dashboard
-[ ] Enhance event tracking capabilities (e.g., duration)
+- [x] Enhance event tracking capabilities (e.g., duration)
+- [ ] Add a convenient link in the CP to navigate to your Pirsch Dashboard
+- [ ] Display Pirsch statistics directly in the Statamic Control Panel
 
 ## Issues
 
