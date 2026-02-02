@@ -11,8 +11,8 @@
 
 ## Requirements
 
-- Statamic v5
-- PHP 8.1+
+- Statamic v5 / v6
+- PHP 8.2+
 - A Pirsch account
 
 ## Installation
